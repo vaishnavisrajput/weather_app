@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./images/bg-image.jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    text-align: center;
+    margin: 130px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    background-color: rgba(0, 0, 0, 0.592);
+    height: 70vh;
+    width: 50%;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+.search input {
+    padding: 15px 100px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(71, 69, 69, 0.319);
+    color: #939191; 
+    font-size: 15px;  
+    font-weight: 600;
+}
+.searchBtn{
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(71, 69, 69, 0.319);
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5a5a;  
+}
+.info{
+    color: #ffff;
+    text-align: left;
+    padding: 100px 50px;
+}
+.info h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.info .temp{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.climateDetails{
+    padding-top: 15px;
+    font-size: 17px;
+}
+.climateDetails p{
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+#cloud{
+    font-size: 25px;
+    font-style: oblique;
+}
+@media (max-width: 768px) {
+    body{
+        height: 100vh;
+    }
+    .search{
+        width: 60%;
+    }
+    .search input{
+        padding: 15px 80px;
+    }
+}
+@media (min-width: 468px) and (max-width: 668px){
+    .search{
+        width: 70%;
+    }
+    .search input{
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 320px){
+    body{
+        height: 125vh;
+    }
+    .search input{
+        padding: 15px 10px;
+    }
+    .search{
+        width: 70%;
+        height: 100vh;
+    }
+    .searchBtn{
+        margin-top: 10px;
+    }
+}
