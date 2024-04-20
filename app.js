@@ -15,15 +15,11 @@ const getResults = async (lat, lon) => {
 	cityName.innerHTML = `Weather in ${result?.name}`;
   }
   else{
-	const button = document.createElement('button');
-	button.textContent = "Reload";
-	button.classList.add('reload-button')
-	searchBox.appendChild(button);
-};
+		window.location.reload();
+	}
+}
 
-  }
-  
-  
+
 const currentCity = async () => {
   let lat, lon;
 
